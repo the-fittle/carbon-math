@@ -1,0 +1,17 @@
+[package]
+name = "carbon-math"
+version = "0.1.0"
+authors = ["fittle"]
+edition = "2021"
+license = "mit"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["colorable"]
+colorable = []
+
+[dependencies]
+bytemuck = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
